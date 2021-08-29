@@ -1,0 +1,3 @@
+include ':app'
+include ':selfunction'
+rootProject.name = "LinkagePicker2"

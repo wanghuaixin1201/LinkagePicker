@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/blue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="18dp"
+            android:text="开发常用功能"
+            android:textColor="@color/white"
+            android:textSize="16dp"></TextView>
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="@android:color/white"
+        app:srlPrimaryColor="@color/blue">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/gray_bg"
+                    android:gravity="center"
+                    android:text="一级联动选择"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/gray_bg"
+                    android:gravity="center"
+                    android:text="二级联动选择"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/gray_bg"
+                    android:gravity="center"
+                    android:text="三级联动选择"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/gray_bg"
+                    android:gravity="center"
+                    android:text="非联动选择器"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_five"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/gray_bg"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="地图选址"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_six"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/gray_bg"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="图片选择器"></TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/tv_seven"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/gray_bg"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="视频选择器"></TextView>
+
+                <cn.jzvd.JZVideoPlayerStandard
+                    android:id="@+id/vv_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="15dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_eight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/gray_bg"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="扫码"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_nine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/gray_bg"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="时间选择"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_ten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/gray_bg"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="时间区间选择"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_eleven"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/gray_bg"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="保存线上图片到本地"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_twelve"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/gray_bg"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="富文本编辑及显示"></TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"></View>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="72dp" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>
