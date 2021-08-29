@@ -1,6 +1,6 @@
 # LinkagePicker
 
-[![](https://jitpack.io/v/com.gitee.wang_huai_xin/linkage-picker2.svg)](https://jitpack.io/#com.gitee.wang_huai_xin/linkage-picker2)
+[![](https://jitpack.io/v/com.gitee.wang_huai_xin/linkage-picker.svg)](https://jitpack.io/#com.gitee.wang_huai_xin/linkage-picker)
 
 #### 介绍
 该开源代码集成了App开发中常用的众多实用功能，包括一至三级联动选择、上拉刷新，下拉加载、地图选址、图片、视频选择器、扫一扫、时间及时间区间选择器、保存图片至本地、富文本编辑及富文本解析显示。该源码可以协助开发人员更好的开发。同时本项目会不断完善开发中常用的功能及Api。
