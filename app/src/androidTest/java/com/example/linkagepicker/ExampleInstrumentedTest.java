@@ -1,4 +1,4 @@
-package com.example.linkagepicker2;
+package com.example.linkagepicker;
 
 import android.content.Context;
 

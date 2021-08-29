@@ -1,4 +1,4 @@
-package com.example.linkagepicker2;
+package com.example.linkagepicker;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,7 +20,8 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.example.linkagepicker2.databinding.ActivityMainBinding;
+import com.example.linkagepicker.R;
+import com.example.linkagepicker.databinding.ActivityMainBinding;
 import com.example.selfunction.WebEditActivity;
 import com.example.selfunction.adapter.ImageListAdapter;
 import com.example.selfunction.listener.OnAddressCallBackListener;
