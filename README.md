@@ -19,7 +19,7 @@
 2.添加依赖项
 
     dependencies {
-	        implementation 'com.github.wanghuaixin1201:LinkagePicker:Tag'
+	        implementation 'com.gitee.wang_huai_xin:linkage-picker:v1.3.0'
     }
 
 3.开始使用
